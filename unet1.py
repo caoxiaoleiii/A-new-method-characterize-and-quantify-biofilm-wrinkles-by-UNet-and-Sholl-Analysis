@@ -1,5 +1,3 @@
-""" Parts of the U-Net model """
-"""https://github.com/milesial/Pytorch-UNet/blob/master/unet/unet_parts.py"""
 
 import torch
 import torch.nn as nn
@@ -106,6 +104,3 @@ class UNet(nn.Module):
         logits = self.outc(x)
         return logits
 
-if __name__ == '__main__':
-    net = UNet(n_channels=3, n_classes=1)
-    print(net)
